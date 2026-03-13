@@ -1,5 +1,8 @@
 extends Node2D
 
+@export var boid2d_scene: PackedScene
+
+var boid = boid2d_scene.instantiate()
 var target = position
 
 # Called when the node enters the scene tree for the first time.
@@ -14,4 +17,4 @@ func _process(delta: float) -> void:
 func _input(event):
 	if event.is_action_pressed(&"click"):
 		target = get_global_mouse_position()
-		var boid = 
+		boid.initialize(target.position,)

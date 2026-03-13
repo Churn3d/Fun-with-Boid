@@ -5,6 +5,7 @@
 
 [node name="Node2D" type="Node2D" unique_id=69958280]
 script = ExtResource("1_gegal")
+boid2d_scene = ExtResource("1_lwckt")
 
 [node name="CharacterBody2D" parent="." unique_id=1798824213 instance=ExtResource("1_lwckt")]
 position = Vector2(329, 228)
