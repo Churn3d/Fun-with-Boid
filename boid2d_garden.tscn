@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bfuv8hgmn7kui"]
 
+[ext_resource type="Script" uid="uid://by2abnixsd0md" path="res://boid_2d_garden.gd" id="1_gegal"]
 [ext_resource type="PackedScene" uid="uid://bt61t7lmxqdyw" path="res://boid2d.tscn" id="1_lwckt"]
 
 [node name="Node2D" type="Node2D" unique_id=69958280]
+script = ExtResource("1_gegal")
 
 [node name="CharacterBody2D" parent="." unique_id=1798824213 instance=ExtResource("1_lwckt")]
 position = Vector2(329, 228)
