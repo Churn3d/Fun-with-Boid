@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bt61t7lmxqdyw"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1798824213]
+[ext_resource type="Script" uid="uid://d35rqxo7a0f6x" path="res://boid_2d.gd" id="1_5kdxg"]
+
+[node name="BoidCharacterBody2D" type="CharacterBody2D" unique_id=1798824213]
+script = ExtResource("1_5kdxg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=301941702]
 polygon = PackedVector2Array(3, 0, 0, -1, 0, 1)
